@@ -7,7 +7,7 @@ pipeline {
     stages {
         stage('Test') {
             steps {
-                sh 'whoami'
+                sh 'pwd'
                 sh './hello_world.sh'
             }
         }
