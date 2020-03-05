@@ -7,6 +7,7 @@ pipeline {
     stages {
         stage('Test') {
             steps {
+                sh 'whoami'
                 sh './hello_world.sh'
             }
         }
