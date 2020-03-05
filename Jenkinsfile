@@ -1,7 +1,7 @@
 pipeline {
     agent {
         docker { 
-            image 'jenkins' 
+            image 'jenkins:3-alpine' 
         }
     }
     stages {
