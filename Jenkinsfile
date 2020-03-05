@@ -5,7 +5,7 @@ pipeline {
     stages {
         stage('Test') {
             steps {
-                sh './hello_world.sh'
+                sh 'sudo ./hello_world.sh'
             }
         }
     }
