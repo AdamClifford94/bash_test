@@ -1,11 +1,14 @@
 pipeline {
     agent {
-        docker { image 'node:7-alpine' }
+        docker { 
+            image 'node:7-alpine' 
+            args '-u root:root'
+        }
     }
     stages {
         stage('Test') {
             steps {
-                sh 'sudo ./hello_world.sh'
+                sh './hello_world.sh'
             }
         }
     }
