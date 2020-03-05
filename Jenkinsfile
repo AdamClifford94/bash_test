@@ -8,8 +8,8 @@ pipeline {
         stage('Test') {
             steps {
                 sh 'pwd'
-                sh 'chmod +x hello_world.sh'
-                sh './hello_world.sh'
+                sh 'chmod +x /var/lib/jenkins/workspace/bash_test/hello_world.sh'
+                sh '/var/lib/jenkins/workspace/bash_test/hello_world.sh'
             }
         }
     }
